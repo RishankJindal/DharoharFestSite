@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+#contact {
+    color: white;
+
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1150px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .container .card {
+        position: relative;
+        width: calc(33.33% - 40px);
+        max-width: 300px;
+        height: 420px;
+        background: white;
+        margin: 20px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+        transform: scale(0.8);
+        padding: 10px;
+
+    }
+
+    .container .card:hover {
+        filter: blur(0px);
+        transform: scale(1.3);
+        opacity: 1;
+    }
+
+    .container .card .circle {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        background: rgba(208, 0, 170, 1);
+        clip-path: circle(180px at center 0);
+        text-align: center;
+    }
+
+    .container .card .circle h2 {
+        font-size: 4.5em;
+        padding: 30px 0;
+    }
+
+    .container .card .content p {
+        font-size: 10px;
+        display: block;
+        color: black;
+        /* Text color inside the cards */
+    }
+
+    .container .card .content h6 {
+        display: block;
+        color: white;
+        /* Text color inside the cards */
+    }
+
+    .container .card .content {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 10px;
+        padding: 20px;
+        page-break-after: 20px;
+        text-align: center;
+    }
+
+
+    .container .card .content a {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        background: #000;
+        color: #fff;
+        border-radius: 40px;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+
+    .form-group {
+        width: 100%;
+        display: flex;
+        font-size: 20px;
+        height: 10vh;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .form-group input {
+        width: 60%;
+    }
+
+    section {
+        text-align: center;
+        color: #de66b6;
+        font-size: 30px;
+    }
+
+    /* Style inputs, select elements and textareas */
+    input[type=text],
+    select,
+    textarea {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+        color: white;
+        /* Text color outside the cards */
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+    /* Style the container */
+    .container {
+        border-radius: 5px;
+        background-color: black;
+        padding: 20px;
+    }
+
+    /* Floating column for labels: 25% width */
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    /* Floating column for inputs: 75% width */
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+
+        .col-25,
+        .col-75,
+        input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+}

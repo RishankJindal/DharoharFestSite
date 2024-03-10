@@ -1,14 +1,14 @@
-$("#myImg").css("visibility", "hidden");
+// $("#myImg").css("visibility", "hidden");
 
-window.onscroll = function () { myFunction() };
+// window.onscroll = function () { myFunction() };
 
-function myFunction() {
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-        $("#myImg").css("visibility", "visible");
-        $("#myImg").addClass("slideUp");
-    }
-}
+// function myFunction() {
+//     if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+//         $("#myImg").css("visibility", "visible");
+//         $("#myImg").addClass("slideUp");
+//     }
+// }
 
-$("#gallery h2").addClass("slideLeft");
-$("#gallery h1").addClass("slideLeft");
-$("#gallery p").addClass("slideRight");
+// $("h2").addClass("slideLeft");
+// $("h1").addClass("slideLeft");
+// $("p").addClass("slideRight");

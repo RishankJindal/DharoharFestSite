@@ -44,6 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Active Links Ends --------------------------------------->
 
+
+// Menu Button working on click any nav link
 let menuButton = document.getElementById('menuButton');
 let navbar = document.getElementById('navbarSupportedContent')
 
@@ -52,9 +54,18 @@ navContainer.forEach(link => {
     link.addEventListener('click', () => {
 
         if (getComputedStyle(menuButton).display !== 'none') {
-            // menuButton.click();
+            menuButton.click();
         }
 
 
     });
 });
+
+// -------------------------------------------------------->
+
+// Table row styling on click
+
+
+
+
+

@@ -1,163 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 #contact {
+    .contact-container {
 
-    .container {
-        position: relative;
-        width: 1150px;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
+        width: 100%;
+
+        min-height: 80vh;
+        display: grid;
         align-items: center;
-        flex-wrap: wrap;
+        grid-template-columns: auto auto;
+        padding: 10px;
+
     }
 
-    .container .card {
-        position: relative;
-        width: 300px;
-        height: 420px;
-        background: white;
-        margin: 20px;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-        transition: 0.5s;
+    .contact-card {
+        min-height: 40vh;
+        text-align: center;
+        background-color: var(--purple);
+        padding: 20px 30px;
         scale: 0.8;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
     }
 
-    .container .card:hover {
-        filter: blur(0px);
-        transform: scale(1.3);
-        opacity: 1;
+    .contact-card:hover {
+        scale: 0.85;
+        box-shadow: 0 0 20px 5px purple;
     }
 
-    .container .card .circle {
-        position: relative;
-        width: 100%;
-        height: 50%;
-        background: rgba(208, 0, 170, 1);
-        clip-path: circle(180px at center 0);
+    .contact-card h2 {
+        margin: 20px 0;
+        color: white;
+        padding: 20px 0;
         text-align: center;
-
+        font-family: sans-serif;
+        font-style: italic;
+        background-color: black;
+        border-radius: 25px;
     }
 
-    .container .card .circle h2 {
-        color: #fff;
-        font-size: 4.5em;
-        padding: 30px 0;
-    }
+    ul {
+        list-style: none;
 
-    .container .card .content {
-        position: absolute;
-        bottom: 10px;
-        padding: 20px;
-        page-break-after: 20px;
-        text-align: center;
-    }
-
-    .container .card .content p {
-        color: #666;
-    }
-
-    .container .card .content a {
-        position: relative;
-        display: inline-block;
-        padding: 10px 20px;
-        background: #000;
-        color: #fff;
-        border-radius: 40px;
-        text-decoration: none;
-        margin-top: 20px;
-    }
-
-    .card {
-        background-color: rgba(208, 0, 170, 1);
-    }
-
-    .form-group {
-        width: 100%;
-        display: flex;
-        font-size: 20px;
-        height: 10vh;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .form-group input {
-        width: 60%;
-    }
-
-    section {
-        text-align: center;
-        color: #de66b6;
-        font-size: 30px;
-
-        /* Style inputs, select elements and textareas */
-        input[type=text],
-        select,
-        textarea {
-
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            resize: vertical;
-        }
-
-
-
-        .form-control {
-            width: 80%;
-        }
-
-        /* Style the submit button */
-        input[type=submit] {
-            background-color: #04AA6D;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            float: right;
-        }
-
-        /* Style the container */
-        .container {
-            border-radius: 5px;
-            background-color: black;
-            padding: 20px;
-        }
-
-        /* Floating column for labels: 25% width */
-        .col-25 {
-            float: left;
-            width: 25%;
-            margin-top: 6px;
-        }
-
-        /* Floating column for inputs: 75% width */
-        .col-75 {
-            float: left;
-            width: 75%;
-            margin-top: 6px;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-
-            .col-25,
-            .col-75,
-            input[type=submit] {
-                width: 100%;
-                margin-top: 0;
-            }
-        }
     }
 }

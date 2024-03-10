@@ -1,6 +1,8 @@
-@media screen and (max-width:770px) {
+@media (max-width:770px) {
 
-
+    section {
+        min-height: 80vh;
+    }
 
     html,
     body {
@@ -167,8 +169,9 @@
             height: 30vh;
         }
 
-        .carousel-item img {
 
+
+        .carousel-item img {
             height: 25vh;
         }
 
@@ -179,5 +182,38 @@
         .masonary-block img:hover {
             scale: 1;
         }
+    }
+
+    #contact {
+
+        .contact-card:hover {
+            box-shadow: 0 0 20px 5px purple;
+        }
+
+        ul {
+            list-style: none;
+            font-size: 5vw;
+        }
+
+
+        h5 {
+            font-size: 6vw;
+            letter-spacing: 5px;
+            margin: 20px 0 10px 0;
+            color: black;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 8vw;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .contact-container {
+            grid-template-columns: auto;
+        }
+
+
     }
 }
