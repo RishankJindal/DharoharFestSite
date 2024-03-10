@@ -43,3 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Active Links Ends --------------------------------------->
+
+let menuButton = document.getElementById('menuButton');
+let navbar = document.getElementById('navbarSupportedContent')
+
+
+navContainer.forEach(link => {
+    link.addEventListener('click', () => {
+
+        if (getComputedStyle(menuButton).display !== 'none') {
+            // menuButton.click();
+        }
+
+
+    });
+});

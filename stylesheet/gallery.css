@@ -1,8 +1,4 @@
 body {
-
-    /* background: linear-gradient(155deg,
-                #af0f77,
-                #e02ca1); */
     background-color: black;
 }
 
@@ -207,7 +203,7 @@ img.hoverImage:hover {
 .masonary-block:hover {
     transform: scale(1.15);
     position: relative;
-    z-index: 500;
+    z-index: 98;
 }
 
 i {

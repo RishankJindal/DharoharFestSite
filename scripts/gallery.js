@@ -9,6 +9,6 @@ function myFunction() {
     }
 }
 
-$("h2").addClass("slideLeft");
-$("h1").addClass("slideLeft");
-$("p").addClass("slideRight");
+$("#gallery h2").addClass("slideLeft");
+$("#gallery h1").addClass("slideLeft");
+$("#gallery p").addClass("slideRight");
