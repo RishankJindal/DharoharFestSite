@@ -39,20 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    let prevScrollPos = window.scrollY;
-    const header = document.getElementById("header");
 
-    window.onscroll = function () {
-        const currentScrollPos = window.scrollY;
-
-        if (prevScrollPos < currentScrollPos) {
-            header.style.top = `-${header.offsetHeight}px`; // Scroll down: hide the header
-        } else {
-            header.style.top = "0"; // Scroll up: show the header
-        }
-
-        prevScrollPos = currentScrollPos;
-    };
 
 });
 
@@ -76,10 +63,6 @@ navContainer.forEach(link => {
 
     });
 });
-
-// -------------------------------------------------------->
-
-// Table row styling on click
 
 
 

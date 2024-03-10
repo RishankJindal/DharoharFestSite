@@ -242,6 +242,8 @@ const contactData = {
 
 }
 
+// Complete the above data with proper information.
+
 document.addEventListener('DOMContentLoaded', () => {
     let contactContainer = document.getElementById('contactCardsContainer');
 
