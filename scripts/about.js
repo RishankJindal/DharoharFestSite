@@ -1,17 +1,21 @@
 const cardData = {
     card1: {
+        name: "edge",
         img: "../assets/logo/edge_logo.png",
         info: "EDGE which allows students to showcase their engineering acumen. Students participate in various events to showcase engineering models and applications developed by them."
     },
     card2: {
+        name: "glitz",
         img: "../assets/logo/glitz_logo.png",
         info: "GLITZ is a fest which showcases cultural elements. It hosts events like dance competitions, plays, singing, rendering of musical instruments and fashion shows."
     },
     card3: {
+        name: "ojas",
         img: "../assets/logo/ojas_logo.png",
         info: "OJAS is the event which highlights emerging trends with themes in business, social discourse and national issues."
     },
     card4: {
+        name: "udaan",
         img: "../assets/logo/udaan_logo.png",
         info: "UDAAN teams from various universities take part in this with full enthasiasm and vigor. Quantum is reprsented by the University team comparising of the best students for the soprts to bring home the champion cup."
     },
@@ -82,8 +86,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // For cards
     for (let key in cardData) {
+        console.log(key);
         let cardLink = document.createElement('a');
-        cardLink.href = "#";
+        cardLink.href = '#events';
 
         let eventCard = document.createElement('div');
         eventCard.className = "event-card";

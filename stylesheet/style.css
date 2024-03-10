@@ -20,6 +20,11 @@ html {
     src: url('../assets/fonts/DancingScript-Regular.ttf');
 }
 
+#header {
+    position: sticky;
+    z-index: 1000;
+}
+
 
 
 .section-header {

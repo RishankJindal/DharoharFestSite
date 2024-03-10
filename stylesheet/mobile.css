@@ -28,6 +28,8 @@
 
     header {
 
+        position: sticky;
+
         .navbar-brand img {
             width: 50vw;
         }
@@ -124,7 +126,7 @@
         }
 
         .cardInfo {
-            font-size: 4vw;
+            font-size: 6vw;
         }
 
         .event-card {
@@ -212,6 +214,11 @@
 
         .contact-container {
             grid-template-columns: auto;
+        }
+
+        marquee {
+            font-size: 4vw;
+
         }
 
 

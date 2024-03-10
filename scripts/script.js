@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Attach a click event listener to each navigation link
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', function (event) {
-            event.preventDefault();
+            // event.preventDefault();
 
             // Get the target section's ID from the href attribute
             let targetId = this.getAttribute('href').substring(1);
@@ -38,6 +38,22 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    let prevScrollPos = window.scrollY;
+    const header = document.getElementById("header");
+
+    window.onscroll = function () {
+        const currentScrollPos = window.scrollY;
+
+        if (prevScrollPos < currentScrollPos) {
+            header.style.top = `-${header.offsetHeight}px`; // Scroll down: hide the header
+        } else {
+            header.style.top = "0"; // Scroll up: show the header
+        }
+
+        prevScrollPos = currentScrollPos;
+    };
+
 });
 
 
