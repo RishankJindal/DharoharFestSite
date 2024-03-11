@@ -37,6 +37,13 @@
         border-radius: 25px;
     }
 
+    .contact-card h5 {
+        letter-spacing: 5px;
+        /* line-height: 10px; */
+        color: black;
+
+    }
+
     ul {
         list-style: none;
 
