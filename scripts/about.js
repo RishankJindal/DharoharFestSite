@@ -30,7 +30,7 @@ const aboutData = {
     },
     qst: {
         heading: "School of Technology",
-        img: "../assets/gallery/DSC_1676.JPG",
+        img: "../assets/gallery/about/about_tech.jpg",
         order: 2,
         about: "Quantum School of Technology is a world class center of excellence that provides an intellectually stimulating environment to hone one's engineering skills besides growing culturally and spiritually. It nurtures high quality technical manpower to meet the challenges of the knowledge era. Quantum has ensured an accomplished infrastructure by way of faculty, laboratories and libraries. Great emphasis is laid on domain-related conferences, seminars, workshops, projects and research as an integral part of the Quantum pedagogy."
     },

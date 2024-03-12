@@ -1,22 +1,96 @@
 
 // Sample event data (you can replace this with your actual data)
 const eventCardData = [
-    { name: 'Event 1', image: '/assets/gallery/events/image01.jpg', teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { name: 'Event 2', image: 'event2.jpg', teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-    { name: 'Event 3', image: 'event1.jpg', teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { name: 'Event 4', image: 'event2.jpg', teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-    { name: 'Event 5', image: 'event1.jpg', teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { name: 'Event 6', image: 'event2.jpg', teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-    { name: 'Event 7', image: 'event1.jpg', teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { name: 'Event 8', image: 'event2.jpg', teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-    { name: 'Event 9', image: 'event1.jpg', teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { name: 'Event 10', image: 'event2.jpg', teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-    { name: 'Event 11', image: 'event1.jpg', teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { name: 'Event 12', image: 'event2.jpg', teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-    { name: 'Event 13', image: 'event1.jpg', teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { name: 'Event 14', image: 'event2.jpg', teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-    { name: 'Event 15', image: 'event1.jpg', teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { name: 'Event 16', image: 'event2.jpg', teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
+    {
+        name: 'Event 1',
+        image: '/assets/gallery/events/image01.jpg',
+        teamMembers: 4, detail: 'This is event 1 organised bu abc department or scienty.No participant can be go anywhere between the match. All the team members must be present there.',
+        formLink: ''
+    },
+    {
+        name: 'Event 2',
+        image: '/assets/gallery/events/image02.jpg',
+        teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        formLink: ''
+    },
+    {
+        name: 'Event 3',
+        image: '/assets/gallery/events/image03.jpg',
+        teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        formLink: ''
+    },
+    {
+        name: 'Event 4',
+        image: '/assets/gallery/events/image04.jpg',
+        teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        formLink: ''
+    },
+    {
+        name: 'Event 5',
+        image: '/assets/gallery/events/image05.jpg',
+        teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        formLink: ''
+    },
+    {
+        name: 'Event 6',
+        image: '/assets/gallery/events/image06.jpg',
+        teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        formLink: ''
+    },
+    {
+        name: 'Event 7',
+        image: '/assets/gallery/events/image07.jpg',
+        teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        formLink: ''
+    },
+    {
+        name: 'Event 8',
+        image: '/assets/gallery/events/image08.jpg',
+        teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        formLink: ''
+    },
+    {
+        name: 'Event 9',
+        image: '/assets/gallery/events/image09.png',
+        teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        formLink: ''
+    },
+    {
+        name: 'Event 10',
+        image: '/assets/gallery/events/image10.jpg',
+        teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        formLink: ''
+    },
+    {
+        name: 'Event 11',
+        image: '/assets/gallery/events/image11.jpg',
+        teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        formLink: ''
+    },
+    {
+        name: 'Event 12',
+        image: '/assets/gallery/events/image12.jpg',
+        teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        formLink: ''
+    },
+    {
+        name: 'Event 13',
+        image: '/assets/gallery/events/image13.jpg',
+        teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        formLink: ''
+    },
+    {
+        name: 'Event 14',
+        image: '/assets/gallery/events/image14.jpg',
+        teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        formLink: ''
+    },
+    {
+        name: 'Event 15',
+        image: '/assets/gallery/events/image15.jpg',
+        teamMembers: 4, detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        formLink: ''
+    },
     // Add more events as needed
 ];
 
@@ -46,7 +120,7 @@ function createEventCard(event) {
     const content = document.createElement('div');
     content.classList.add('register-card-content');
 
-    const eventName = document.createElement('h3');
+    const eventName = document.createElement('h4');
     eventName.textContent = event.name;
     content.appendChild(eventName);
 
@@ -60,6 +134,7 @@ function createEventCard(event) {
 
     const registerButton = document.createElement('button');
     registerButton.textContent = 'Register';
+    registerButton.className = event.name.replace(' ', '');
     content.appendChild(registerButton);
 
     card.appendChild(content);
@@ -69,3 +144,18 @@ function createEventCard(event) {
 
 // Initial rendering of event cards
 filterEvents();
+
+
+// Redirect button click to a respective register link.
+const registerDirectedButton = document.querySelectorAll('.register-card button');
+
+registerDirectedButton.forEach(button => {
+    button.addEventListener('click', () => {
+        eventCardData.forEach(event => {
+            if (button.className === event.name) {
+                window.location.href = event.formLink;
+            }
+        })
+
+    })
+})

@@ -53,11 +53,15 @@
         padding: 15px;
     }
 
+    .register-card-content p {
+        font-size: 1vw;
+    }
+
     .register-card button {
         display: block;
         width: 100%;
         padding: 10px;
-        margin: 10px 0;
+        margin: auto 0 10px 0;
         background-color: rgb(224, 3, 224);
         color: #fff;
         border: none;
