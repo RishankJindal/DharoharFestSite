@@ -11,7 +11,7 @@ const eventCardData = [
         name: 'Event 2',
         image: '/assets/gallery/events/image02.jpg',
         teamMembers: 3, detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        formLink: ''
+        formLink: '../assets/gallery/events/image01.jpg'
     },
     {
         name: 'Event 3',
@@ -152,8 +152,11 @@ const registerDirectedButton = document.querySelectorAll('.register-card button'
 registerDirectedButton.forEach(button => {
     button.addEventListener('click', () => {
         eventCardData.forEach(event => {
-            if (button.className === event.name) {
-                window.location.href = event.formLink;
+            if (button.className === event.name.replace(' ', '')) {
+                if (!(event.formLink === '')) {
+                    // window.location.href = event.formLink;
+                    window.open(event.formLink, '_blank');
+                }
             }
         })
 
